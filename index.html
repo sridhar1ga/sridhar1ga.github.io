@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<title>Sridhar Vanga</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="static/css/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+
+<main class="container">
+	<section class="content">
+		<h1 style="font-size: 6.25em;">Sridhar Vanga</h1>
+		<br>
+		<br>
+		<p class="" id="desc" style="font-size: 17px;"></p>
+		<a href="mailto:sridharvanga2001@gmail.com" title="Email Sridhar Vanga">Contact</a>
+	</section>
+</main>
+
+<footer>
+	<a class="tw" href="https://twitter.com/sridhar1ga" title="Sridhar Vanga on Twitter"><i class="fab fa-twitter"></i></a>
+	<a class="fb" href="https://www.facebook.com/sridhar.vanga.10" title="Sridhar Vanga on Facebook"><i class="fab fa-facebook-f"></i></a>
+	<a class="ig" href="https://www.instagram.com/sridhar1ga/" title="Sridhar Vanga on Instagram"><i class="fab fa-instagram"></i></a>
+	<a class="li" href="www.linkedin.com/in/sridhar-vanga" title="Sridhar Vanga on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+	<a class="gh" href="https://github.com/sridhar1ga" title="Sridhar Vanga on Github"><i class="fab fa-github"></i></a>
+	<a class="gl" href="https://gitlab.com/sridhar1ga" title="Sridhar Vanga on Gitlab"><i class="fab fa-gitlab"></i></a>
+</footer>
+
+<script>
+var showText = function (target, message, index, interval) {
+	if (index < message.length) {
+		$(target).append(message[index++]);
+		setTimeout(function () { showText(target, message, index, interval); }, interval);
+	}
+}
+$(function () {
+	showText("#desc", "Student at IIIT-H", 0, 100);
+});
+</script>
+</body>
+</html>
